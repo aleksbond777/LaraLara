@@ -69,8 +69,8 @@ html, body {
     <?php
     date_default_timezone_set("Europe/Kiev");
     echo "Current Time " . date("Y-m-d H:i:s"); ?>
-    </br>
-    </br>
+    <br>
+    <br>
     <?php
     date_default_timezone_set("Europe/Kiev");
     echo "Current Time " . date("s:i:H d-m-Y"); ?>
