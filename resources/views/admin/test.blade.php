@@ -68,13 +68,21 @@ html, body {
 
     <?php
     date_default_timezone_set("Europe/Kiev");
-    echo "Current Time " . date("Y-m-d H:i:s"); ?>
+    echo "Current Time " . date("Y-m-d H:i:s");
+    ?>
     <br>
     <br>
     <?php
     date_default_timezone_set("Europe/Kiev");
-    $date1 = date("s:i:H");
-    $date2 = date("d-m-Y");
+    $date = date("s:i:H d-m-Y");
+    echo "Current Time " . $date;
+    ?>
+    <br>
+    <br>
+    <?php
+    date_default_timezone_set("Europe/Kiev");
+    $date1 = date("H:i:s");
+    $date2 = date("Y-m-d");
     $date3 = date($date1 . " " . $date2);
     echo "Current Time " . $date3;
     ?>
