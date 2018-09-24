@@ -69,11 +69,15 @@ html, body {
     <?php
     date_default_timezone_set("Europe/Kiev");
     echo "Current Time " . date("Y-m-d H:i:s"); ?>
-    </br>
-    </br>
+    <br>
+    <br>
     <?php
     date_default_timezone_set("Europe/Kiev");
-    echo "Current Time " . date("s:i:H d-m-Y"); ?>
+    $date1 = date("s:i:H");
+    $date2 = date("d-m-Y");
+    $date3 = date($date1 . " " . $date2);
+    echo "Current Time " . $date3;
+    ?>
 
     <div class="flex-center position-ref full-height">
 @if (Route::has('login'))
