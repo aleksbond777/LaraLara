@@ -86,6 +86,15 @@ html, body {
     $date3 = date($date1 . " " . $date2);
     echo "Current Time " . $date3;
     ?>
+    <br>
+    <br>
+    <?php
+    date_default_timezone_set("Europe/Kiev");
+    $time = date("H:i:s");
+    $mydate=getdate(date("U"));
+    $echoMyDate = "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
+    echo "Date and Time : " . $echoMyDate . " " . $time;
+    ?>
 
     <div class="flex-center position-ref full-height">
 @if (Route::has('login'))
