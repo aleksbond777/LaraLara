@@ -66,36 +66,6 @@ html, body {
     </head>
     <br>
 
-    <?php
-    date_default_timezone_set("Europe/Kiev");
-    echo "Current Time " . date("Y-m-d H:i:s");
-    ?>
-    <br>
-    <br>
-    <?php
-    date_default_timezone_set("Europe/Kiev");
-    $date = date("s:i:H d-m-Y");
-    echo "Current Time " . $date;
-    ?>
-    <br>
-    <br>
-    <?php
-    date_default_timezone_set("Europe/Kiev");
-    $date1 = date("H:i:s");
-    $date2 = date("Y-m-d");
-    $date3 = date($date1 . " " . $date2);
-    echo "Current Time " . $date3;
-    ?>
-    <br>
-    <br>
-    <?php
-    date_default_timezone_set("Europe/Kiev");
-    $time = date("H:i:s");
-    $mydate=getdate(date("U"));
-    $echoMyDate = "$mydate[weekday], $mydate[month] $mydate[mday], $mydate[year]";
-    echo "Date and Time : " . $echoMyDate . " " . $time;
-    ?>
-
     <div class="flex-center position-ref full-height">
 @if (Route::has('login'))
     <div class="top-right links">
@@ -111,8 +81,9 @@ html, body {
 <div class="content">
     <div class="title m-b-md">
         Test
-
         {{ $name }}
+        <br>
+        {{ $date }}
 
     </div>
 
