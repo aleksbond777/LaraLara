@@ -84,6 +84,10 @@ html, body {
         {{ $name }}
         <br>
         {{ $date }}
+        <br>
+        {{ $datereverse }}
+        <br>
+        {{ $daterewrite }}
 
     </div>
 

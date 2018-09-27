@@ -11,7 +11,10 @@ class AdminController extends Controller
         $name = "Vasya";
         date_default_timezone_set('Europe/Kiev');
         $date = date("Y-m-d H:i:s");
-        return view('admin.test')->with(compact('name', 'date'));
+        $datereverse = strrev(date("Y-m-d H:i:s"));
+        $daterewrite = date("s:i:H d-m-Y");
+        return view('admin.test')->with(compact('name',
+            'date', 'datereverse', 'daterewrite'));
     }
 }
 
@@ -23,9 +26,10 @@ class AdminController extends Controller
 //}
 
 
-//public function index()
+//    function time()
 //{
 //    $name = "Vasya";
 //    date_default_timezone_set('Europe/Kiev');
 //    $date = date("Y-m-d H:i:s");
 //    return view('admin.test')->with(compact('name', 'date'));
+//}
