@@ -17,19 +17,3 @@ class AdminController extends Controller
             'date', 'datereverse', 'daterewrite'));
     }
 }
-
-//function date()
-//{
-//    date_default_timezone_set('UTC+2');
-//    $date = date("Y-m-d H:i:s");
-//    echo "Current Time " . $date;
-//}
-
-
-//    function time()
-//{
-//    $name = "Vasya";
-//    date_default_timezone_set('Europe/Kiev');
-//    $date = date("Y-m-d H:i:s");
-//    return view('admin.test')->with(compact('name', 'date'));
-//}
